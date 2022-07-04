@@ -1,0 +1,14 @@
+.home{
+    min-height: 100vh;
+    display:grid;
+    place-items:center;
+    /* height:20vmin; */
+    /* aspect-ratio: 1 / 2; */
+}
+
+.home-img{
+    background: linear-gradient(rgba(0, 0, 0, 0.208), black), url('https://picsum.photos/500/500');
+    width:60vmin;
+    /* background-size: 100%; */
+    aspect-ratio: 1 / 1;
+}

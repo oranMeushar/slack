@@ -1,0 +1,30 @@
+{
+  "name": "socket-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon app.js\" \"cd client && npm run start\"",
+    "start-debug": "concurrently \"npm run server-debug\" \"cd client && npm run start\"",
+    "server-debug": "nodemon app.js --inspect",
+    "start-prod": "SET NODE_ENV=production&npm run start",
+    "start-prod-debug": "SET NODE_ENV=production && npm run start-debug"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment-timezone": "^0.5.34",
+    "mongoose": "^6.3.5",
+    "socket.io": "^3.1.2",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
